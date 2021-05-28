@@ -44,9 +44,11 @@ h2 {
 
 .card .card__image {
   background-image: url(images/image-header-mobile.jpg);
+  background-color: var(--softViolet);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-blend-mode: multiply;
   min-height: 15rem;
   position: relative;
 }
@@ -55,23 +57,12 @@ h2 {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
   left: 0;
   background-color: var(--softViolet);
-  opacity: 0.6;
+  opacity: 0.3;
 }
-
-/* .card .card__image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: var(--slightlyTransaprentWhite2);
-  opacity: 0.5;
-} */
 
 .card .card__text {
   padding: 2.5rem 1.875rem 1.875rem 2.1875rem;
